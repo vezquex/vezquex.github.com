@@ -1,3 +1,6 @@
 ﻿body { background: #000; color: #fff; margin: 0; font: 17px/120% 'Lucida Grande', Verdana, Helvetica, sans-serif; }
 canvas { border: 1px #888 solid; }
 a { color:#afa; text-decoration: none; }
+#all {  }
+.main { margin: auto; padding: 1em; max-width: 40em; background: #111; }
+#footer { text-align: right; }
