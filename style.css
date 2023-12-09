@@ -5,4 +5,4 @@ article { margin: auto; padding: 1em; max-width: 40em; background: #111; }
 canvas { border: 1px #888 solid; }
 h1 {display:flex;margin: 0;position:relative;}
 h1 a {flex-grow: 1; line-height:2;}
-.anchor {position: absolute;left: -3em;width:2em;text-align:center;border-radius:2em;border: #202020 1px solid;}
+.anchor {display:none;position: absolute;left: -3em;width:2em;text-align:center;border-radius:2em;border: #202020 1px solid;}
