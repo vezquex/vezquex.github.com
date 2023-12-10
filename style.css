@@ -1,3 +1,4 @@
+:root {color-scheme: dark;}
 body { background: #000; color: #fff; margin: 0; font: 17px/120% 'Lucida Grande', Verdana, Helvetica, sans-serif; }
 a { color:#afa; text-decoration: none; }
 a:hover {background:rgba(255,255,255,.1);}
