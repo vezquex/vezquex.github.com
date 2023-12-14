@@ -2,8 +2,11 @@
 body { background: #000; color: #fff; margin: 0; font: 17px/120% 'Lucida Grande', Verdana, Helvetica, sans-serif; }
 a { color:#afa; text-decoration: none; }
 a:hover {background:rgba(255,255,255,.1);}
-article { margin: auto; padding: 1em; max-width: 40em; background: #111; }
+article { margin: auto; padding: 0 1em; max-width: 40em; }
+h1 a, p, ul { background: #202020; margin: 0; padding: 0 1rem 1rem; }
 canvas { border: 1px #888 solid; }
-h1 {display:flex;margin: 0;position:relative;}
-h1 a {flex-grow: 1; line-height:2;}
+h1 {display:flex;margin: 1em 0 0;position:relative;}
+h1 a {flex-grow: 1; line-height:2;padding-top: 1em; border-radius: 1rem 1rem 0 0 }
+ul {padding-left: 2em;}
+:has(+ h1) {border-radius: 0 0 1em 1em;}
 .anchor {display:none;position: absolute;left: -3em;width:2em;text-align:center;border-radius:2em;border: #202020 1px solid;}
