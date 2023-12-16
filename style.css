@@ -1,5 +1,5 @@
 :root {color-scheme: dark;}
-body { background: #000; color: #fff; margin: 0 0 2em; font: 17px/120% 'Lucida Grande', Verdana, Helvetica, sans-serif; }
+body { background: #000; color: #fff; margin: 0 0 2em; font: 16px/1.25 sans-serif; }
 a { color:#afa; text-decoration: none; }
 a:hover {background:rgba(127,255,127,.2);}
 article { margin: auto; padding: 0 1em; max-width: 40em; }
