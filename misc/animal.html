@@ -12,23 +12,24 @@ Animals
 		margin: 0;
 	}
 	section {
-		justify-content: space-between;
 		border-radius: .5em;
 		box-shadow: #000 0 1em 1em;
-		display: flex;
-		flex-direction: column;
 		margin: 1em;
-		padding: 0 1em;
+		padding: 0 1em 2em 1em;
+		position: relative;
 		overflow: hidden;
 		width: 26ch;
 	}
 	a {
+		bottom: 0;
 		color: #C0C0C0;
 		display: block;
 		background: rgba(0,0,0,.1);
 		line-height: 2;
 		margin: 0 -1em;
 		padding: 0 1em;
+		position: absolute;
+		width: 100%;
 		text-decoration: none;
 	}
 	.light a {
@@ -54,171 +55,204 @@ Animals
 		line-height: 1.5;
 		margin: 1em 0;
 	}
+	.emoji {
+		float: right;
+		font-size: 2em;
+		line-height: 2;
+	}
 </style>
 
 <section style="background-color: hsl(275, 50%, 33%)">
+	<div class='emoji'>🦌</div>
 	<h2>Alces</h2>
 	<p>European elk</p>
 	<a href="https://en.wikipedia.org/wiki/Moose#Subspecies">info</a>
 </section>
 
 <section style="background-color: hsl(15, 50%, 33%)">
+	<div class='emoji'>🦬</div>
 	<h2>Bison</h2>
 	<p>Plains bison</p>
 	<a href="https://en.wikipedia.org/wiki/Plains_bison">info</a>
 </section>
 
 <section style="background-color: hsl(60, 50%, 33%)">
+	<div class='emoji'>🦉</div>
 	<h2>Bubo</h2>
 	<p>European eagle-owl: dark and richly colored</p>
 	<a href="https://en.wikipedia.org/wiki/Eurasian_eagle-owl#Subspecies">info</a>
 </section>
 
 <section style="background-color: hsl(30, 50%, 33%)">
+	<div class='emoji'>🐸</div>
 	<h2>Bufo</h2>
 	<p>Toad secretes bufotoxin when threatened.</p>
 	<a href="https://en.wikipedia.org/wiki/Common_toad">info</a>
 </section>
 
 <section style="background-color: hsl(60, 50%, 33%)">
+	<div class='emoji'>🦅</div>
 	<h2>Buteo</h2>
 	<p>Buzzard hunts from a perch and feeds on voles.</p>
 	<a href="https://en.wikipedia.org/wiki/Common_buzzard">info</a>
 </section>
 
 <section style="background-color: hsl(30, 50%, 33%)">
+	<div class='emoji'>🦌</div>
 	<h2>Capreolus</h2>
 	<p>Roe deer, small and lives in cold climates</p>
 	<a href="https://en.wikipedia.org/wiki/Roe_deer">info</a>
 </section>
 
 <section style="background-color: hsl(60, 50%, 33%)">
+	<div class='emoji'>🐈</div>
 	<h2>Caracal</h2>
 	<p>A wild cat in southern and east Africa.</p>
 	<a href="https://en.wikipedia.org/wiki/Caracal">info</a>
 </section>
 
 <section style="background-color: hsl(30, 50%, 55%)">
+	<div class='emoji'>🐢</div>
 	<h2>Caretta</h2>
 	<p>Atlantic loggerhead turtle</p>
 	<a href="https://en.wikipedia.org/wiki/Loggerhead_sea_turtle">info</a>
 </section>
 
 <section style="background-color: hsl(0, 10%, 33%)">
+	<div class='emoji'>🐤</div>
 	<h2>Crossoptilon</h2>
 	<p>Szechuan white eared pheasant, inhabits rocky mountains</p>
 	<a href="https://en.wikipedia.org/wiki/Crossoptilon_crossoptilon_crossoptilon">info</a>
 </section>
 
 <section style="background-color: hsl(56, 50%, 33%)">
+	<div class='emoji'>🐦‍⬛</div>
 	<h2>Francolinus</h2>
 	<p>Western black francolin, a gamebird</p>
 	<a href="https://en.wikipedia.org/wiki/Black_francolin">info</a>
 </section>
 
 <section style="background-color: hsl(150, 50%, 33%)">
+	<div class='emoji'>🐓</div>
 	<h2>Gallus</h2>
 	<p>Cochin-Chinese red junglefowl</p>
 	<a href="https://en.wikipedia.org/wiki/Gallus_gallus_gallus">info</a>
 </section>
 
 <section class="light" style="background-color: hsl(60, 67%, 67%);">
+	<div class='emoji'>🦒</div>
 	<h2>Giraffa</h2>
 	<p>South African giraffe</p>
 	<a href="https://en.wikipedia.org/wiki/Southern_giraffe">info</a>
 </section>
 
 <section style="background-color: hsl(0, 0%, 33%)">
+	<div class='emoji'>🦍</div>
 	<h2>Gorilla</h2>
 	<p>Western lowland gorilla</p>
 	<a href="https://en.wikipedia.org/wiki/Gorilla_gorilla_gorilla">info</a>
 </section>
 
 <section style="background-color: hsl(30, 60%, 50%)">
+	<div class='emoji'>🦩</div>
 	<h2>Jacana</h2>
 	<p>Wattled jacana, a wading bird</p>
 	<a href="https://en.wikipedia.org/wiki/Wattled_jacana">info</a>
 </section>
 
 <section style="background-color: hsl(15, 50%, 33%)">
+	<div class='emoji'>🐤</div>
 	<h2>Lagopus</h2>
 	<p>Willow ptarmigan's lagopus, a grouse bird</p>
 	<a href="https://en.wikipedia.org/wiki/Willow_ptarmigan">info</a>
 </section>
 
 <section style="background-color: hsl(30, 50%, 33%)">
+	<div class='emoji'>🦦</div>
 	<h2>Lutra</h2>
 	<p>Eurasian otter</p>
 	<a href="https://en.wikipedia.org/wiki/Eurasian_otter">info</a>
 </section>
 
 <section style="background-color: hsl(45, 50%, 33%)">
+	<div class='emoji'>🐆</div>
 	<h2>Lynx</h2>
 	<p>Northern lynx, a feline predator</p>
 	<a href="https://en.wikipedia.org/wiki/Northern_lynx">info</a>
 </section>
 
 <section style="background-color: hsl(0, 0%, 33%)">
+	<div class='emoji'>🦡</div>
 	<h2>Meles</h2>
 	<p>Common badger, lives in burrows</p>
 	<a href="https://en.wikipedia.org/wiki/European_badger">info</a>
 </section>
 
 <section class="light" style="background-color: hsl(0, 0%, 100%);">
+	<div class='emoji'>🦨</div>
 	<h2>Mephitis</h2>
 	<p>Canada striped skunk</p>
 	<a href="https://en.wikipedia.org/wiki/Striped_skunk">info</a>
 </section>
 
 <section style="background-color: hsl(45, 50%, 33%)">
+	<div class='emoji'>🐍</div>
 	<h2>Naja</h2>
 	<p>Indian cobra</p>
 	<a href="https://en.wikipedia.org/wiki/Indian_cobra">info</a>
 </section>
 
 <section style="background-color: hsl(60, 50%, 33%)">
+	<div class='emoji'>🐍</div>
 	<h2>Natrix</h2>
 	<p>Central European grass snake, non-venomous</p>
 	<a href="https://en.wikipedia.org/wiki/Grass_snake">info</a>
 </section>
 
 <section style="background-color: hsl(240, 50%, 33%)">
+	<div class='emoji'>🐦‍⬛</div>
 	<h2>Pica</h2>
 	<p>Common magpie, only bird known to pass the mirror test</p>
 	<a href="https://en.wikipedia.org/wiki/Eurasian_magpie">info</a>
 </section>
 
 <section style="background-color: hsl(0, 50%, 33%)">
+	<div class='emoji'>🐦</div>
 	<h2>Quelea</h2>
 	<p>Red-billed quelea, a migratory bird native to west and central Africa.</p>
 	<a href="https://en.wikipedia.org/wiki/Red-billed_quelea">info</a>
 </section>
 
 <section style="background-color: hsl(0, 0%, 0%)">
+	<div class='emoji'>🐀</div>
 	<h2>Rattus</h2>
 	<p>Black rat</p>
 	<a href="https://en.wikipedia.org/wiki/Black_Rat">info</a>
 </section>
 
 <section style="background-color: hsl(15, 50%, 33%)">
+	<div class='emoji'>🦌</div>
 	<h2>Redunca</h2>
 	<p>Bohor reedbuck</p>
 	<a href="https://en.wikipedia.org/wiki/Bohor_reedbuck">info</a>
 </section>
 
 <section style="background-color: hsl(15, 50%, 33%)">
+	<div class='emoji'>🐐</div>
 	<h2>Rupicapra</h2>
 	<p>Alpine chamois, a small goat-antelope</p>
 	<a href="https://en.wikipedia.org/wiki/Chamois">info</a>
 </section>
 
 <section style="background-color: hsl(180, 50%, 33%)">
+	<div class='emoji'>🐤</div>
 	<h2>Sula</h2>
 	<p>Caribbean and southwest Atlantic islands red-footed booby, a large seabird</p>
 	<a href="https://en.wikipedia.org/wiki/Red-footed_booby">info</a>
 </section>
 
 <section style="background-color: hsl(0, 50%, 33%)">
+	<div class='emoji'>🦊</div>
 	<h2>Vulpes</h2>
 	<p>Scandinavian red fox, 70-90cm long, weighing 5-10kg</p>
 	<a href="https://en.wikipedia.org/wiki/Red_fox">info</a>
