@@ -7,47 +7,80 @@
 <link rel='authorization_endpoint' href='https://indieauth.com/auth'>
 <link rel='token_endpoint' href='https://tokens.indieauth.com/token'>
 <style>
-:root {color-scheme: dark;}
-body { background: #000; color: #F0F0F0; margin: 0 0 2em; font: 16px/1.25 sans-serif; }
-a { color:#AAFFAA; text-decoration: none; }
-a:hover {background: rgb(26,34,37);}
-h1 a, .h a, p, ul { line-height: 1.5; margin: 0; padding: 0 1rem 1rem; }
-h1, .h {display:flex;margin: 0;font-weight:normal;}
-h2 {font-size: 1em;}
+:root {color-scheme:dark;}
+body {
+	background:#000;
+	color:#F0F0F0;
+	margin:0 2em 2em;
+	font-family:sans-serif;
+	font-size:16px;
+	line-height:1.25;
+}
+a {
+	color:#AAFFAA;
+	text-decoration:none;
+}
+a:hover {background:rgb(26,34,37);}
+.header, section {
+	margin:0 auto;
+	max-width:40rem;
+}
+header {
+	border-bottom:#1A2225 1px solid;
+	margin:0 -2rem;
+}
+.header {
+	color:#A080C0;
+	font-family:'Roboto Mono',Consolas,monospace;
+	font-size:32px;
+	letter-spacing:-2px;
+	line-height:59px;
+}
+h1 a, .h a, p, ul { line-height:1.25; margin:0; padding:0 19px 19px; }
+h1, .h {display:flex;font-weight:normal;margin:0;}
+h2 {font-size:1em;}
 .row {display:flex;}
-.grow, h1 a, .h a {flex-grow: 1;}
+.grow, h1 a, .h a {flex-grow:1;}
 h1 a, .h a {
-	font-weight: normal;
-	padding-top: 1rem;
-	border-bottom: #1A2225 1px solid;
+	border-bottom:#1A2225 1px solid;
+	font-weight:normal;
+	padding-top:18px;
 }
-p, ul {
-	padding: 10px 16px;
-}
-ul {
-	padding-left: 2em;
+.h {
+	border-top:#1A2225 1px solid;
 }
 section {
-	border: #1A2225 1px solid;
-	background: rgb(14,22,24);
-	border-radius: 1em;
-	margin: 20px auto;
-	max-width: 40em;
-	overflow: hidden;
+	background:rgb(14,22,24);
+	border:#1A2225 1px solid;
+	border-radius:12px;
+	margin-top:20px;
+	overflow:hidden;
+}
+p, ul {
+	padding:10px 16px;
+}
+ul {
+	padding-left:2em;
 }
 </style>
 <link rel='icon'>
-<div hidden>
+<div id='logo' hidden>
 <svg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='-5 -5 10 10'>
-<ellipse rx='4' stroke='#AAFFAA'/>
+<ellipse rx='4' fill='#AAFFAA'/>
+<ellipse rx='2' cx='1' cy='-1' fill='#504060'/>
 </svg>
 </div>
 <script>
-const encoded_svg = document.getElementsByTagName('svg')[0].outerHTML.replace(/\#/g, '%23')
+const encoded_svg = document.body.querySelector('#logo svg').outerHTML.replace(/\#/g, '%23')
 document.head.querySelector('link[rel=icon]').href = `data:image/svg+xml,${encoded_svg}`
 </script>
+<header>
+	<div class='header'>
+		Vezquex
+	</div>
+</header>
 <section>
-<h1><a href='https://vezquex.github.io/clock/dice.html'>Dice, Cards, &amp; Chess</a></h1>
+<h1><a href='https://vezquex.github.io/clock/dice.html'>Dice and more</a></h1>
 <ul>
 <li>Grids of arbitrary pips</li>
 <li>Playing cards: ace through king</li>
