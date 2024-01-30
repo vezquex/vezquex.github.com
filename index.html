@@ -7,6 +7,7 @@
 <link rel='authorization_endpoint' href='https://indieauth.com/auth'>
 <link rel='token_endpoint' href='https://tokens.indieauth.com/token'>
 <style>
+* {box-sizing: border-box;}
 :root {color-scheme:dark;}
 body {
 	background:#000;
@@ -28,7 +29,6 @@ a:hover {background:rgb(26,34,37);}
 header {
 	border-bottom:#1A2225 1px solid;
 	margin:0 -2rem;
-	padding: 0 2rem;
 }
 .header {
 	color:#A080C0;
@@ -36,6 +36,7 @@ header {
 	font-size:32px;
 	letter-spacing:-2px;
 	line-height:59px;
+	padding:0 19px;
 }
 h1 a, .h a, p, ul { line-height:1.25; margin:0; padding:0 19px 19px; }
 h1, .h {display:flex;font-weight:normal;margin:0;}
@@ -81,77 +82,82 @@ document.head.querySelector('link[rel=icon]').href = `data:image/svg+xml,${encod
 	</div>
 </header>
 <section>
-<h1><a href='https://vezquex.github.io/clock/dice.html'>Dice and more</a></h1>
-<ul>
-<li>Grids of arbitrary pips</li>
-<li>Playing cards: ace through king</li>
-<li>Chess position display</li>
-</ul>
+	<h1><a href='https://vezquex.github.io/clock/dice.html'>Dice and more</a></h1>
+	<ul>
+		<li>Grids of polygonal pips</li>
+		<li>Playing cards: ace through king</li>
+		<li>Chess position display</li>
+	</ul>
 </section>
 <section>
-<h1><a href='https://vezquex.github.io/clock/chess/'>Chess Viewer</a></h1>
-<p>Step through a recorded chess game.</p>
-<h2 class='h'><a href='https://vezquex.github.io/clock/chess/widget.html'>Encapsulated Transparent Chess Widget</a></h2>
+	<h1><a href='https://vezquex.github.io/clock/chess/'>Chess Viewer</a></h1>
+	<p>Step through a recorded chess game.</p>
+	<h2 class='h'><a href='https://vezquex.github.io/clock/chess/widget.html'>Encapsulated Transparent Chess Widget</a></h2>
 </section>
 <section>
-<h1><a href='https://vezquex.github.io/clock/retro-168.html'>Retro Watch</a></h1>
-<p>Example of SVG decorations and finer adjustments</p>
+	<h1><a href='https://vezquex.github.io/clock/retro-168.html'>Retro Watch</a></h1>
+	<p>Watch face with SVG decorations and finer adjustments and 7 colors to choose from.</p>
+	</section>
+<section>
+	<h1><a href='https://vezquex.github.io/clock/world.html'>World Time</a></h1>
+	<ul>
+		<li>Browse time zones!</li>
+		<li>16-segment display for city names</li>
+		<li>Responsive layout for mobile browsers</li>
+	</ul>
 </section>
 <section>
-<h1><a href='https://vezquex.github.io/clock/world.html'>World Time</a></h1>
-<ul>
-<li>Browse time zones!</li>
-<li>16-segment display for city names</li>
-<li>Responsive layout for mobile browsers</li>
-</ul>
+	<h1><a href='https://vezquex.github.io/clock'>Clock</a></h1>
+	<ul>
+		<li>Toggle seconds display by clicking on the time.</li>
+		<li>Color-coded to the day of the week</li>
+		<li>Kanji day of the week</li>
+		<li>24-hour time with leading zero</li>
+		<li>Standard date format</li>
+		<li>Day of the week and month spelled out in full</li>
+	</ul>
 </section>
 <section>
-<h1><a href='https://vezquex.github.io/clock'>Clock</a></h1>
-<ul>
-<li>Toggle seconds display by clicking on the time.</li>
-<li>Color-coded to the day of the week</li>
-<li>Kanji day of the week</li>
-<li>24-hour time with leading zero</li>
-<li>Standard date format</li>
-<li>Day of the week and month spelled out in full</li>
-</ul>
+	<h1><a href='https://vezquex.github.io/clock/segment.html'>7-Segment Display</a></h1>
+	<p>Crisply scaled old-school clock in a variety of colors</p>
 </section>
 <section>
-<h1><a href='https://vezquex.github.io/clock/segment.html'>7-Segment Display</a></h1>
-<p>Crisply scaled old-school clock in a variety of colors</p>
+	<h1><a href='https://vezquex.github.io/clock/watch-canvas.html'>Pixel font watch face</a></h1>
+	<p>Pebble Time was the 2nd and final iteration of a smart-watch from a startup that was later acquired by Fitbit, which was later acquired by Google.</p>
+	<p>The hardware had an always-on LCD display with a similar resolution to a Game Boy, but in portrait with 64 colors. My demo does not take advantage of the full resolution, opting for pixel doubling to ensure legibility, resulting in a blockier aesthetic.</p>
+	<p>The Pebble SDK isn't very useful unless you have the corresponding hardware, so this demonstration uses HTML canvas.</p>
+	<h2 class='h'>
+		<a href='https://vezquex.github.io/clock/demo.html'>
+			Pixel Font Demo
+		</a>
+	</h2>
+	<p>Supplementary content designed for the pixel font watch face:</p>
+	<ul>
+	<li>Favicon clock</li>
+	<li>Time offset slider</li>
+	<li>Theme switcher</li>
+	<li>Pixel font printouts</li>
+	<li>Text colors</li>
+	<li>Weather, color-coded</li>
+	<li>Grid background (visualizes text alignment)</li>
+	</ul>
+	<p>The 5x5 pixel font is called <em>Bagua</em>, as 5 rows and columns is just enough resolution for a trigram. The font was made for this watch face because it can act much like a 7-segment display, with the added benefit of a saner approach to rendering the Roman alphabet and other symbols, typically in the ASCII character set.</p>
+	<h2 class='h'>
+		<a href='https://vezquex.github.io/clock/mip.html'>
+			HD Pixel Fonts
+		</a>
+	</h2>
+	<p>Modified to support more than one size of pixel font. Fonts comparable to some Japanese fitness watches, with desired adjustments.</p>
+	<h2 class='h'>
+		<a href='https://vezquex.github.io/clock/minimal.html'>
+			Minimal Clock Demo
+		</a>
+	</h2>
 </section>
 <section>
-<h1><a href='https://vezquex.github.io/clock/watch-canvas.html'>Pebble Time watch face</a></h1>
-<p>Pebble Time was the 2nd and final iteration of a smart-watch from a startup that was later acquired by Fitbit, which was later acquired by Google.</p>
-<p>The hardware had an always-on LCD display with a similar resolution to a Game Boy, but in portrait with 64 colors. My demo does not take advantage of the full resolution, opting for pixel doubling to ensure legibility, resulting in a blockier aesthetic.</p>
-<p>The Pebble SDK isn't very useful unless you have the corresponding hardware, so this watch face demonstration uses HTML canvas.</p>
-</section>
-<section>
-<h1><a href='https://vezquex.github.io/clock/minimal.html'>Minimal Demo</a></h1>
-<p>Similar to other pages, sans many features.</p>
-</section>
-<section>
-<h1><a href='https://vezquex.github.io/clock/demo.html'>Pixel Font Demo</a></h1>
-<p>Supplementary content designed for the Pebble Time watch face page.</p>
-<ul>
-<li>Favicon clock</li>
-<li>Time offset slider</li>
-<li>Theme switcher</li>
-<li>Pixel font printouts</li>
-<li>Text colors</li>
-<li>Weather, color-coded</li>
-<li>Grid background (helps developer line up text visually)</li>
-</ul>
-<p>The 5x5 pixel font is called <em>Bagua</em>, as 5 rows and columns is just enough resolution for a trigram. The font was made for this watch face because it can act much like a 7-segment display, with the added benefit of a saner approach to rendering the Roman alphabet and other symbols, typically in the ASCII character set.</p>
-</section>
-<section>
-<h1><a href='https://vezquex.github.io/clock/mip.html'>Pixel Fonts HD</a></h1>
-<p>Modified to support more than one size of pixel font. Fonts comparable to some Japanese fitness watches, with desired adjustments.</p>
-</section>
-<section>
-<h1></a><a href='https://vezquex.github.io/misc/animal.html'>Animals</a></h1>
-<ul>
-	<li>Latin names</li>
-	<li>Emoji</li>
-</ul>
+	<h1></a><a href='https://vezquex.github.io/misc/animal.html'>Animals</a></h1>
+	<ul>
+		<li>Latin names</li>
+		<li>Emoji</li>
+	</ul>
 </section>
