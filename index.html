@@ -8,7 +8,10 @@
 <link rel='token_endpoint' href='https://tokens.indieauth.com/token'>
 <style>
 * {box-sizing: border-box;}
-:root {color-scheme:dark;}
+:root {
+	--accent: #A080C0;
+	color-scheme:dark;
+}
 body {
 	background:#000;
 	color:#F0F0F0;
@@ -32,11 +35,12 @@ header {
 	padding:0 1rem;
 }
 .header {
-	color:#A080C0;
+	color:var(--accent);
+	display: flex;
 	font-family:'Roboto Mono',Consolas,monospace;
 	font-size:32px;
 	letter-spacing:-2px;
-	line-height:59px;
+	line-height:65px;
 	padding:0 19px;
 }
 h1 a, .h a, p, ul { line-height:1.25; margin:0; padding:0 19px 19px; }
@@ -65,23 +69,26 @@ p, ul {
 ul {
 	padding-left:2em;
 }
+.logo svg {
+	fill: var(--accent);
+	width: 1.5em;
+	opacity: .5;
+}
 </style>
 <link rel='icon'>
-<div id='logo' hidden>
-<svg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='-5 -5 10 10'>
-<ellipse rx='4' fill='#AAFFAA'/>
-<ellipse rx='2' cx='1' cy='-1' fill='#504060'/>
-</svg>
-</div>
-<script>
-const encoded_svg = document.body.querySelector('#logo svg').outerHTML.replace(/\#/g, '%23')
-document.head.querySelector('link[rel=icon]').href = `data:image/svg+xml,${encoded_svg}`
-</script>
 <header>
-	<div class='header'>
+	<div class='header logo'>
 		Vezquex
+		<svg xmlns='http://www.w3.org/2000/svg' version='1.1' viewBox='-5 -5 10 10'>
+			<ellipse rx='4' fill='#AAFFAA'/>
+			<ellipse rx='2' cx='1' cy='-1' fill='#504060'/>
+		</svg>
 	</div>
 </header>
+<script>
+	const encoded_svg = document.body.querySelector('.logo > svg').outerHTML.replace(/\#/g, '%23')
+	document.head.querySelector('link[rel=icon]').href = `data:image/svg+xml,${encoded_svg}`
+</script>
 <section>
 	<h1><a href='https://vezquex.github.io/clock/analog.html'>Analog Clock</a></h1>
 	<h2 class='h'><a href='https://vezquex.github.io/clock/biel.html'>Biel dive watch</a></h2>
